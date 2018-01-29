@@ -1,0 +1,36 @@
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+date-button-slider {
+    .late {
+        float: left;
+        div {
+            @include rotate(-90deg);
+            width: 91px;
+            position: relative;
+            left: -20px;
+            top: 37px;
+            z-index: 10;
+
+            background-color: #f4f4f4;
+            color: #D00924;
+
+            &.selected {
+                background-color: #D00924;
+                color: #FFFFFF;
+            }
+        }
+    }
+    ion-scroll {
+        position: relative;
+        .scroll-content {
+            margin-left: 55px;
+            padding: 16px 16px 16px 0 !important;
+        }
+    }
+}

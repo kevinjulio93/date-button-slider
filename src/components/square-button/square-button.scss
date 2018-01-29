@@ -1,0 +1,17 @@
+square-button {
+    div {
+        background-color: #f4f4f4;
+        color: #000000;
+        border-radius: 4px;
+        display: inline-block;
+        line-height: 1.5em;
+        padding: 1em;
+        text-align: center;
+        text-transform: uppercase;
+
+        &.selected {
+            background-color: #5CBCB9;
+            color: #ffffff;
+        }
+    }
+}
