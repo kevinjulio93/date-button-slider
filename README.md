@@ -23,3 +23,7 @@ late button.  I've seen designs with the badge on other days, but Zander didn't
 include it here.  If it's easy to have the same style of badge on any of the
 buttons that would be great. It should be optional, if no badge value is
 assigned it shouldn't show up.
+
+Zander also mentioned that the details for the shadow are:
+
+`#A2A2A2 @50%, x=0, y=2, blur=4, spread=0`
