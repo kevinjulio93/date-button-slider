@@ -1,21 +1,28 @@
-<div>
+
     <square-button
         class="late"
         [badge]="late"
         [selected]="selected == 'late'"
         (selectedChange)="selectButton('late')"
     >
+    
         Late
     </square-button>
+    
     <ion-scroll scrollX="true" style="height: 123px; white-space: nowrap">
         <square-button
+            class="days"
             *ngFor="let day of buttons"
             [selected]="selected == day.format('YYYY-MM-DD')"
             (selectedChange)="selectButton(day.format('YYYY-MM-DD'))"
+            
         >
-            {{ day.format('MMMM') }}<br>
-            {{ day.format('D') }}<br>
-            {{ day.format('dddd') }}
+            <div class="Mybadge"><p class="badge-text">{{day.format('DD')}}</p></div>
+            <p class="text-month">  {{ day.format('MMMM')}} </p>
+            <p class="text-number">    {{ day.format('D') }}  </p>
+            <p class="text-day">{{ day.format('ddd') }} </p>
+
+            
         </square-button>
     </ion-scroll>
-</div>
+
