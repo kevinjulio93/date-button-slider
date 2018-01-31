@@ -29,8 +29,9 @@ date-button-slider {
                 height: 5px;
                 margin-left: 91px;
                 box-shadow: none;
-                border: solid 2px;
+                border: solid 2px #DDDDDD;
                 margin-top: -6px;
+                
             }
             
             .badge-late-text{
@@ -43,7 +44,12 @@ date-button-slider {
             &.selected {
                 background-color: #D00924;
                 color: #FFFFFF;
+                .badge-late{
+                    border-color: #D00924;
+                }
             }
+
+            
         }
     }
     
@@ -58,7 +64,7 @@ date-button-slider {
             .Mybadge{
                 position: absolute;
                 border-radius: 50%;
-                border: solid 2px #29C0B9;
+                border: solid 2px #DDDDDD;
                 margin-top: -25px;
                 margin-left: 25px;
                 height: 4px;
@@ -67,7 +73,15 @@ date-button-slider {
                 box-shadow: none;
             }
 
-
+            &.selected {
+                background-color: #5CBCB9;
+                color: #FFFFFF;
+                .Mybadge{
+                    border-color: #29C0B9;
+                }
+            }
+            
+            
             .badge-text{
                 margin-top: -9px;
                 margin-left: -8px;
@@ -106,6 +120,7 @@ date-button-slider {
         .scroll-content {
             margin-left: 55px;
             padding: 16px 16px 16px 0 !important;
+            
             
         }
     }
