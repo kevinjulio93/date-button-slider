@@ -1,5 +1,6 @@
 <square-button class="late" [badge]="late" [selected]="selected == 'late'" (selectedChange)="selectButton('late')">
-    <div class="badge-late" ng-if="late; [hidden]='true' ">
+    <!-- in this part if the content of late is null, the badge will be hidden -->
+    <div class="badge-late" [hidden]="late == ''">
         <p class="badge-late-text">{{ late }}</p>
     </div>
     Late
@@ -7,9 +8,12 @@
 
 <ion-scroll scrollX="true" style="height: 123px; white-space: nowrap">
     <square-button class="days" *ngFor="let day of buttons" [selected]="selected == day.format('YYYY-MM-DD')" (selectedChange)="selectButton(day.format('YYYY-MM-DD'))">
-        <div class="Mybadge">
-            <p class="badge-text">{{day.format('DD')}}</p>
+
+        <!-- here, hidden is not working yet -->
+        <div class="Mybadge" [hidden]="">
+            <p class="badge-text"></p>
         </div>
+
         <p class="text-month"> {{ day.format('MMMM')}} </p>
         <p class="text-number"> {{ day.format('D') }} </p>
         <p class="text-day">{{ day.format('ddd') }} </p>
