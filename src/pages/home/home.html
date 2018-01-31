@@ -1,15 +1,15 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>{{ title }}</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>{{ title }}</ion-title>
+    </ion-navbar>
 </ion-header>
+
+
 <ion-content>
-    <date-button-slider
-        days="10"
-        late="5"
-        [(selected)]="segment"
-    ></date-button-slider>
+    <date-button-slider days="10" late="5" [(selected)]="segment"></date-button-slider>
+    
     <div padding>
         <p>Selected {{ segment }}</p>
     </div>
+
 </ion-content>

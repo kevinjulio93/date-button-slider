@@ -3,8 +3,8 @@ import * as moment from 'moment';
 import { Moment } from 'moment';
 
 @Component({
-  selector: 'date-button-slider',
-  templateUrl: 'date-button-slider.html'
+    selector: 'date-button-slider',
+    templateUrl: 'date-button-slider.html'
 })
 export class DateButtonSliderComponent {
 
