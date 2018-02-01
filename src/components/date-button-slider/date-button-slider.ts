@@ -6,8 +6,10 @@ import { Moment } from 'moment';
     selector: 'date-button-slider',
     templateUrl: 'date-button-slider.html'
 })
-export class DateButtonSliderComponent {
 
+export class DateButtonSliderComponent {
+    
+    public test : string;
     @Input() days: number = 7;
     @Input() late: number = 0;
     @Input() selected: string;
@@ -15,6 +17,7 @@ export class DateButtonSliderComponent {
 
     constructor() {
         this.selectedChange = new EventEmitter<string>();
+        this.test = "";
     }
 
     get buttons(): Array<Moment> {

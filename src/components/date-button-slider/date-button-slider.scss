@@ -118,10 +118,13 @@ date-button-slider {
     ion-scroll {
         position: relative;
         .scroll-content {
-            margin-left: 55px;
+            margin-left: 39px;
             padding: 16px 16px 16px 0 !important;
             
             
+        }
+        ::-webkit-scrollbar {
+            display: none;
         }
     }
 

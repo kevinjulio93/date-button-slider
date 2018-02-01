@@ -10,8 +10,8 @@
     <square-button class="days" *ngFor="let day of buttons" [selected]="selected == day.format('YYYY-MM-DD')" (selectedChange)="selectButton(day.format('YYYY-MM-DD'))">
 
         <!-- here, hidden is not working yet -->
-        <div class="Mybadge" [hidden]="">
-            <p class="badge-text"></p>
+        <div class="Mybadge" [hidden]="test ==''">
+            <p class="badge-text">{{test}}</p>
         </div>
 
         <p class="text-month"> {{ day.format('MMMM')}} </p>
