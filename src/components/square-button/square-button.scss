@@ -1,18 +1,33 @@
 square-button {
     div {
-        background-color: #f4f4f4;
-        color: #000000;
-        border-radius: 4px;
-        display: inline-block;
-        line-height: 1.5em;
-        padding: 1em;
-        text-align: center;
-        text-transform: uppercase;
-        margin-left: -13px;
+           
+    
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1em;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: -13px;
+    width: 69px;
+    height: auto;
+        
+       .Mybadge{
+           padding: 10px;
+       }
+
+       .badge-late{
+           padding: 10px;
+       }
 
         &.selected {
             background-color: #5CBCB9;
             color: #ffffff;
+        }
+
+        p{
+            margin: 0 auto;
+            margin-top: 10px;
         }
     }
 }

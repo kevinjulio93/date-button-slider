@@ -3,20 +3,25 @@
     <div class="badge-late" [hidden]="late == ''">
         <p class="badge-late-text">{{ late }}</p>
     </div>
-    Late
+    <p>Late</p> 
 </square-button>
 
 <ion-scroll scrollX="true" style="height: 123px; white-space: nowrap">
+        
     <square-button class="days" *ngFor="let day of buttons" [selected]="selected == day.format('YYYY-MM-DD')" (selectedChange)="selectButton(day.format('YYYY-MM-DD'))">
 
         <!-- here, hidden is not working yet -->
         <div class="Mybadge" [hidden]="test ==''">
-            <p class="badge-text">{{test}}</p>
-        </div>
+                <p class="badge-text">{{test}}</p>
+            </div>
 
-        <p class="text-month"> {{ day.format('MMMM')}} </p>
-        <p class="text-number"> {{ day.format('D') }} </p>
-        <p class="text-day">{{ day.format('ddd') }} </p>
+            
+                    <p class="text-month"> {{ day.format('MMM')}} </p>
+                    <p class="text-number"> {{ day.format('D') }} </p>
+                    <p class="text-day">{{ day.format('ddd') }} </p>
+            
+
+        
 
 
     </square-button>

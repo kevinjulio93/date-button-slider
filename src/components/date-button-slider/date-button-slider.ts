@@ -17,7 +17,7 @@ export class DateButtonSliderComponent {
 
     constructor() {
         this.selectedChange = new EventEmitter<string>();
-        this.test = "";
+        this.test = "5";
     }
 
     get buttons(): Array<Moment> {

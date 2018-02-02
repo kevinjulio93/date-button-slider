@@ -13,39 +13,45 @@ date-button-slider {
         
         div {
             @include rotate(-90deg);
-            width: 91px;
+            width: 70px;
             position: relative;
             left: -20px;
-            top: 39px;
+            top: 30px;
             z-index: 10;
             background-color: #fff;
-            color: #D00924;
-            box-shadow: 0px 2px 5px 0px #a2a2a2;
+            color: #707070;
+            box-shadow: -1px -1px 4px 1px #a2a2a2;
+            line-height: 1em;
+            height: 43px;
+        
             
             .badge-late{
                 position: absolute;
                 border-radius: 50%;
                 width: 5px;
                 height: 5px;
-                margin-left: 91px;
+                margin-left: 5.3em;
+                border: solid 2px #F2F4F7;
                 box-shadow: none;
-                border: solid 2px #DDDDDD;
-                margin-top: -6px;
+                margin-top: -2px;
                 
             }
             
             .badge-late-text{
-                margin-top: -15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-top: -7px;
                 text-align: center;
                 transform: rotateX(180deg) rotateY(180deg);
-                padding: 3px;
-                margin-left: 2px
+                
             }
             &.selected {
-                background-color: #D00924;
+                background-color: #D0021B;
                 color: #FFFFFF;
                 .badge-late{
-                    border-color: #D00924;
+                    border-color: #D0021B;
                 }
             }
 
@@ -57,19 +63,20 @@ date-button-slider {
         div{
             background: #fff;
             box-shadow: 0px 2px 5px 0px #a2a2a2;
-            margin-left: 20px;
+            margin-left: 13px;
             color: #707070;
             border-radius: 4px;
 
             .Mybadge{
                 position: absolute;
                 border-radius: 50%;
-                border: solid 2px #DDDDDD;
-                margin-top: -25px;
-                margin-left: 25px;
-                height: 4px;
-                width: 4px;
+                border: solid 2px #F2F4F7;
+                margin-top: -1.6em;
+                margin-left: 1.3em;
+                height: 0;
+                width: 0;
                 text-align: center;
+                -webkit-box-shadow: none;
                 box-shadow: none;
             }
 
@@ -77,32 +84,36 @@ date-button-slider {
                 background-color: #5CBCB9;
                 color: #FFFFFF;
                 .Mybadge{
-                    border-color: #29C0B9;
+                    border-color: #5CBCB9;
                 }
             }
             
             
             .badge-text{
-                margin-top: -9px;
-                margin-left: -8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-top: -7px;
                                 
             }
 
             .text-month{
                 margin: 0px;
-                margin-top: -1px;
-                font-size: 12px;
+                margin-top: -4px;
+                font-size: 11px;
             }
             .text-number{
                 font-size: 20px ;
                 margin-bottom: 3px;
-                margin-top: 3px;
+                margin-top: 6px;
             }
             .text-day{
                 margin: 0px;
                 font-size: 12px;
                 margin-bottom: -10px;
                 margin-top: 8px;
+                font-size: 11px;
                 
     
             }
@@ -118,9 +129,9 @@ date-button-slider {
     ion-scroll {
         position: relative;
         .scroll-content {
-            margin-left: 39px;
-            padding: 16px 16px 16px 0 !important;
-            
+            margin-left: 22px;
+            padding: 16px 16px 16px 5px !important;
+            height: auto;
             
         }
         ::-webkit-scrollbar {
