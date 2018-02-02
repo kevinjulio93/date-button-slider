@@ -1,7 +1,7 @@
 # Date Button Slider
 
 ![Mock Up](src/assets/imgs/mockup.png)
-(src/assets/imgs/component.png)
+![Component](src/assets/imgs/component.png)
 
 We have a user interface component on our task planner that allows you to choose
 beween late tasks and tasks on a particular day.
